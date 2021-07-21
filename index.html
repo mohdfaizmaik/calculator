@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" class="width = device-widh, initial-scale =1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title> Calculator</title>
+</head>
+<body>
+	<form name="form" class="calculator">
+		<input type="" name="textinput" class="value">
+		<span class="num clear" onclick="clean()">C</span>
+		<span class="num delete" onclick="back()">DEL</span>
+		<span class="num" onclick="insert('/')">/</span>
+		<span class="num" onclick="insert('7')">7</span>
+		<span class="num" onclick="insert('8')">8</span>
+		<span class="num" onclick="insert('9')">9</span>
+		<span class="num" onclick="insert('*')">*</span>
+		<span class="num" onclick="insert('-')">-</span>
+		<span class="num" onclick="insert('4')">4</span>
+		<span class="num" onclick="insert('5')">5</span>
+		<span class="num" onclick="insert('6')">6</span>
+		<span class="num plus" onclick="insert('+')">+</span>
+		<span class="num" onclick="sqrt('*')">sqrt</span>
+		<span class="num" onclick="insert('3')">3</span>
+		<span class="num" onclick="insert('2')">2</span>
+		<span class="num" onclick="insert('1')">1</span>
+		<span class="num" onclick="insert('0')">0</span>
+		<span class="num" onclick="insert('00')">00</span>
+		<span class="num" onclick="insert('.')">.</span>
+		<span class="num equal" onclick="calculate()">=</span>
+	</form>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
