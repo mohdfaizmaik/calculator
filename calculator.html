@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" class="width = device-widh, initial-scale =1.0">
+	<link rel="stylesheet" type="text/css" href="claculator.css">
+	<title> Calculator</title>
+</head>
+<body>
+	<header style="height: 10vh;">
+	<nav class="" id="nav">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<ul>
+			<li><a href="calculator.html">Calculator</a></li>
+			<li><a href="index.html">Home</a></li>
+		</ul>
+		<button class="icon" id="toggle">
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+		</button>
+		<script type="text/javascript" src="script.js"></script>
+	</nav>
+	</header>
+	<section>
+	<form name="form" class="calculator">
+		<input type="" name="textinput" class="value" style="font-size: 30px;">
+		<p id = "prevResult" class="prevResult">0</p>
+		<span class="num clear" onclick="clean()">C</span>
+		<span class="num delete" onclick="back()">DEL</span>
+		<span class="num" onclick="sqrt()">sqrt</span>
+		<span class="num exp" onclick="exp()">exp</span>
+		<span class="num" onclick="insert('/')">/</span>
+		<span class="num" onclick="insert('-')">-</span>
+		<span class="num" onclick="insert('7')">7</span>
+		<span class="num" onclick="insert('8')">8</span>
+		<span class="num" onclick="insert('9')">9</span>
+		<span class="num" onclick="insert('(')">(</span>
+		<span class="num" onclick="insert(')')">)</span>
+
+		<span class="num" onclick="insert('*')">*</span>
+		<span class="num" onclick="insert('4')">4</span>
+		<span class="num" onclick="insert('5')">5</span>
+		<span class="num" onclick="insert('6')">6</span>
+		
+		
+		<span class="rad" onclick="radian()">rad</span>
+		<span class="num" onclick="insert('**')">^</span>
+		<span class="num" onclick="cos()">cos</span>
+		<span class="num plus" onclick="insert('+')">+</span>
+		<span class="num" onclick="insert('3')">3</span>
+		<span class="num" onclick="insert('2')">2</span>
+		<span class="num" onclick="insert('1')">1</span>
+		
+		
+		<span class="num" id="deg" onclick="degree()">deg</span>
+		<span class="num log" onclick="calc_log()">ln</span>
+		
+		<span class="num" onclick="sin()">sin</span>
+		<span class="num zero"  onclick="insert('0')">0</span>
+		<span class="num" onclick="insert('00')">00</span>
+		<span class="num" onclick="insert('.')">.</span>
+		<span class="num" onclick="percent()">%</span>
+		<span class="num equal" onclick="calculate()">=</span>
+		
+		
+		
+		
+	</form>
+	</section>
+
+	<script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>
