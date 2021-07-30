@@ -1,59 +1,21 @@
-function insert(num){
-    var fz = document.form.textinput.value
-    document.form.textinput.value = fz + num
-}
+const toggle = document.getElementById('toggle');
+const nav = document.getElementById('nav');
 
-function calculate(){
-    var fz =document.form.textinput.value
-    document.form.textinput.value = eval(fz)
-}
-
-function clean(){
-    document.form.textinput.value = ""
-}
-
-function back(){
-    var fz =document.form.textinput.value
-    document.form.textinput.value = fz.substring(0,fz.length-1)
-}
-
-function sqrt() {
-    var fz = document.form.textinput.value
-    document.form.textinput.value = Math.sqrt(fz)
-}
-
-function calc_log(){
-    var fz = document.form.textinput.value
-    document.form.textinput.value = Math.log(fz)
-}
-
-function exp(){
-    var fz = document.form.textinput.value
-    document.form.textinput.value = Math.exp(fz)
-}
-
-function percent(){
-    var fz = document.form.textinput.value
-    document.form.textinput.value = fz/100
-}
+toggle.addEventListener('click', () => 
+	nav.classList.toggle('active'))
 
 
-function radian(){
-    var fz = document.form.textinput.value
-    document.form.textinput.value = parseFloat((fz * (3.14/180)).toFixed(3))
-}
+const panels = document.querySelectorAll('.panel')
 
-function degree(){
-    var fz = document.form.textinput.value
-    document.form.textinput.value = parseFloat((fz * (180 / 3.14)).toFixed(2))
-}
+panels.forEach(panel => {
+	panel.addEventListener('click', () =>{
+		removeActiveClasses()
+		panel.classList.add('active')
+	})
+})
 
-function cos(){
-    var fz = document.form.textinput.value
-    document.form.textinput.value = parseFloat(Math.cos(fz * (Math.PI / 180)).toFixed(2))
-}
-
-function sin(){
-    var fz = document.form.textinput.value
-    document.form.textinput.value = parseFloat(Math.sin(fz * (Math.PI / 180)).toFixed(2))
+function removeActiveClasses() {
+	panels.forEach(panel => {
+		panel.classList.remove('active')
+	})
 }
