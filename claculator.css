@@ -6,7 +6,7 @@
 }
 
 section{
-	background-color: #091921;
+	background-color: #ecf0f3;
 	font-family: sans-serif;
 	display: flex;
 	justify-content: center;
@@ -15,9 +15,18 @@ section{
 	
 }
 
+.container{
+	position: absolute;
+	left: 450px;
+}
+
 .calculator{
+	border-radius: 5px;
 	position: relative;
 	display: grid;
+	padding: 10px;
+	box-shadow: 12px 12px 20px #cbced1,
+	 	   -12px -12px 20px #ffffff
 }
 
 .calculator .value{
@@ -26,31 +35,36 @@ section{
 	text-align: right;
 	border: none;
 	outline: none;
-	padding: 10px;
+	padding-right: .5rem;
+	background:#ecf0f3;
+	border-radius: 12px;
 	font-size: 18px;
 	position: relative;
+	box-shadow: inset 8px 8px 8px #cbced1,
+		    inset -8px -8px 8px #ffffff
 }
 
 .prevResult{
 	position: absolute;
-	color: #111;
 	top: 70px;
-	left: 10px;
+	left: 20px;
 	font-size: 25px;
-	color: #03b1ff;
 }
 
 .calculator span{
 	display: grid;
 	width: 65px;
 	height: 60px;
-	color: #fff;
 	font-size: 25px;
 	background: #29617e;
 	place-items: center;
+	outline: none;
 	border: 2px solid rgba(0, 0, 0,.1);
 	cursor: pointer;
+	margin: 4px;
 	padding: 10px;
+	box-shadow: 5px 5px 8px #00000020,
+		   -5px -5px 8px #ffffff
 }
 
 
